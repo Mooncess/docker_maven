@@ -5,6 +5,4 @@ WORKDIR /app/
 COPY pom.xml /app/pom.xml
 RUN mvn dependency:go-offline
 
-COPY src /app/src
-
 CMD ["mvn", "clean", "install"]
